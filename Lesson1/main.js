@@ -153,11 +153,11 @@
 // console.log(123 == '123')
 
 // - Подумайте Які значення виведе у вікно браузера наступний фрагмент коду? і чому?
-let str = "20";
-let a = 5;
-document.write(str + a + "<br/>");    // =205  -- string + integer = string
-document.write(str - a + "<br/>");    // =15  --  string - integer = integer
-document.write(str * "2" + "<br/>");  // =40  -- string * integer = integer
-document.write(str / 2 + "<br/>");    // =10  -- string / integer = integer
+// let str = "20";
+// let a = 5;
+// document.write(str + a + "<br/>");    // =205  -- string + integer = string
+// document.write(str - a + "<br/>");    // =15  --  string - integer = integer
+// document.write(str * "2" + "<br/>");  // =40  -- string * integer = integer
+// document.write(str / 2 + "<br/>");    // =10  -- string / integer = integer
 
 // !!! Відповідь на останнє завдання я давав судячи з результату виведеного на екран)
