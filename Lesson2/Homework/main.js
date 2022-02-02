@@ -43,26 +43,26 @@
 
 
 // -- - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день.
-const week = prompt(`Please enter number of the day of the week`)
-switch (week) {
-    case `1`:
-    case `3`:
-    case `5`:
-        console.log(`You have a lecture today`)
-        break;
-    case `2`:
-    case `4`:
-        console.log(`You have a practice today`)
-        break;
-    case `6`:
-        console.log(`You have English today`)
-        break;
-    case `7`:
-        console.log(`Finaly! It's a Holiday!`)
-        break;
-    default:
-        console.log(`Please try again`)
-}
+// const week = prompt(`Please enter number of the day of the week`)
+// switch (week) {
+//     case `1`:
+//     case `3`:
+//     case `5`:
+//         console.log(`You have a lecture today`)
+//         break;
+//     case `2`:
+//     case `4`:
+//         console.log(`You have a practice today`)
+//         break;
+//     case `6`:
+//         console.log(`You have English today`)
+//         break;
+//     case `7`:
+//         console.log(`Finaly! It's a Holiday!`)
+//         break;
+//     default:
+//         console.log(`Please try again`)
+// }
 
 
 // -- - Потрібно визначити Високосний рік чи ні. Високосні роки діляться націло на 4.
