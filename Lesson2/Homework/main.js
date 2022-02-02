@@ -66,7 +66,7 @@ switch (week) {
 
 
 // -- - Потрібно визначити Високосний рік чи ні. Високосні роки діляться націло на 4.
-// let year = prompt(`Please enter year`)
+// let year = prompt(`Будь ласка введіть рік`)
 // if (year % 4 === 0 && year % 100 !== 0)
 //     console.log(`Високосний`)
 // else if (year % 400 === 0)
