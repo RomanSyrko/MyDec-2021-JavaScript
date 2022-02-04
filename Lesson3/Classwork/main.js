@@ -12,6 +12,10 @@ let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18]
 // for (i = 0; i < arr.length; i++) {
 //     console.log(arr[i])
 // }
+// або
+// for (number of arr) {
+//     console.log(number);
+// }
 
 // --- 3. перебрати циклом while та вивести  числа тільки з непарним індексом
 // i = 0;
