@@ -28,14 +28,14 @@ mathMax(11, 22, 33)
 
 
 // --- створити функцію яка повертає найбільше число з масиву
-function returnMaxNumber(arrMM) {
+function returnMaxNumber() {
     return Math.max(...oneArrayForAll);
 }
 let arrMax = returnMaxNumber()
 console.log(arrMax)
 
 // --- створити функцію яка повертає найменьше число з масиву
-function returnMinNumber(arrMM) {
+function returnMinNumber() {
     return Math.min(...oneArrayForAll);
 }
 let arrMin = returnMinNumber()
