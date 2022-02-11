@@ -67,11 +67,12 @@ fArr2(myArray);
 
 
 // --- створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
-let myArrObject = [{id: 0, name: `Petya`, age: 34}, {id: 1, name: `Roman`, age: 23}, {
-    id: 2,
-    name: `Ivan`,
-    age: 27
-}, {id: 3, name: `Yulia`, age: 18}];
+let myArrObject = [
+    {id: 0, name: `Petya`, age: 34},
+    {id: 1, name: `Roman`, age: 23},
+    {id: 2, name: `Ivan`, age: 27},
+    {id: 3, name: `Yulia`, age: 18}
+];
 
 let fInfo = (myAO) => {
     for (let myAOElement of myAO) {
