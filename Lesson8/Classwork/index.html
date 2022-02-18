@@ -104,7 +104,7 @@
 
     // --- k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
     let content1 = document.getElementsByClassName(`content_1`);
-    content1[0].innerText = `Any text`//prompt(`Please write any text`)
+    content1[0].children[0].innerText = `Any text`//prompt(`Please write any text`)
 
     // --- l) отримати елементи p та змінити їм padding на 20px
     let p20px = document.getElementsByTagName(`p`);
