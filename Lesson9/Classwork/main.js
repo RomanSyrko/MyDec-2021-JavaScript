@@ -50,6 +50,8 @@ for (let simpson of simpsons) {
     divNumber.classList.add(`member`)
     document.body.append(divNumber)
 
+    let names = document.createElement(`h2`);
+
     let name = document.createElement(`div`);
     name.classList.add(`name`)
     name.innerText = `${simpson.name}`
@@ -59,7 +61,7 @@ for (let simpson of simpsons) {
 
     let age = document.createElement(`div`);
     age.classList.add(`age`)
-    age.innerText = `${simpson.age}`
+    age.innerText = `Age - ${simpson.age}`
 
     let info = document.createElement(`p`);
     info.classList.add(`info`)
@@ -70,8 +72,19 @@ for (let simpson of simpsons) {
     img.src = simpson.photo;
     img.alt = `${simpson.name} ${simpson.surname}`
 
-    divNumber.append(name, surname, age, info, img)
+
+    divNumber.append(names, age, info, img)
+    names.append(name, surname)
     document.body.append(divNumber)
+
+    names.style.margin = `0`
+    divNumber.style.border = `3px solid #4a4946`
+    divNumber.style.background = `#e6fbff`
+    divNumber.style.marginBottom = `10px`
+    divNumber.style.padding = `20px`
+    names.style.display = `flex`
+    name.style.marginRight = `4px`
+    img.style.width = `120px`
 }
 
 
@@ -176,7 +189,6 @@ for (let item of coursesArray) {
     mainDiv.style.border = `3px solid #4a4946`
     mainDiv.style.background = `#fff8e6`
     mainDiv.style.marginBottom = `10px`
-    mainDiv.style.boxSizing = `border-box`
     mainDiv.style.padding = `25px`
     modules.style.margin = `0px`
     title.style.margin = `0px`
