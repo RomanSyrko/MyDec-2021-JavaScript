@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<body>
+<!--// --- створити форму з інпутами для name та age.-->
+<!--// При відправці форми записати об'єкт в localstorage-->
+<form name="f1">
+    <input type="text" name="name">
+    <input type="number" name="age">
+    <button>Save</button>
+</form>
+
+
+<!--// --- створити форму з інпутами для model,type та volume автівки.-->
+<!--// при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.-->
+<form name="f2">
+    <input name="model">
+    <input name="type">
+    <input name="volume">
+    <button>Send</button>
+</form>
+
+<script>
+    // --- F1
+    let f1 = document.forms.f1;
+    f1.onsubmit = function (e) {
+        e.preventDefault();
+
+        const user = {
+            name: f1.elements.name.value,
+            age: f1.elements.age.value,
+        };
+
+        localStorage.setItem('user', JSON.stringify(user));
+    }
+
+
+
+    // --- F2
+    let f2 = document.forms.f2;
+    let array = []
+    f2.onsubmit = function (e) {
+        e.preventDefault();
+        array.push(f2.model.value, f2.type.value, f2.volume.value)
+
+        localStorage.setItem(array, JSON.stringify(array))
+    }
+
+</script>
+
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+</html>

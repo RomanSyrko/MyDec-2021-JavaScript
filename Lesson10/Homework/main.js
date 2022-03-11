@@ -41,7 +41,7 @@ let comments = [
     {title: 'lorem2', body: 'lorem ipsum dolo sit ameti'},
     {title: 'lorem3', body: 'lorem ipsum dolo sit ameti'},
     {title: 'lorem4', body: 'lorem ipsum dolo sit ameti'},
-    {title: 'lorem5', body: 'lorem ipsum dolo sit ameti?'},
+    {title: 'lorem5', body: 'lorem ipsum dolo sit ameti'},
 ];
 
 let mainDIV = document.createElement('div');
@@ -62,6 +62,8 @@ for (const item of comments) {
     mainDIV.append(div);
 
     mainDIV.style.display = `flex`
+    div.style.margin = `5px`
+    div.style.border = `1px solid black`
 }
 document.body.appendChild(mainDIV)
 
